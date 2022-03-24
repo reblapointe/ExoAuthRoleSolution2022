@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace ExoAuthEtRoleSolution.Authorization
 {
+    // Détermine si un utilisateur a les droits Create, Read, Update ou Delete
+    // sur un vêtement
     public class VetementProprietaireAuthorizationHandler
                  : AuthorizationHandler<OperationAuthorizationRequirement, Vetement>
     {

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace ExoAuthRoleSolution2022.Authorizations
 {
+    // Contient les noms des opérations possibles dans l'application
     public class AuthorizationConstants
     {
         public static readonly string CreateOperationName = "Create";

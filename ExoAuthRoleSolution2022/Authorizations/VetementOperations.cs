@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExoAuthEtRoleSolution.Authorization
 {
+    // Contient les opérations possibles dans l'application
     public static class VetementOperations
     {
         public static OperationAuthorizationRequirement Create =
