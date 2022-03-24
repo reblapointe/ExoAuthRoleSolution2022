@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization.Infrastructure;
 
 namespace ExoAuthEtRoleSolution.Authorization
 {
+    // Gestionnaire de l'autorisation de l'administrateur :
     // Détermine si un utilisateur a les droit d'administrateur
     public class VetementAdminAuthorizationHandler
                   : AuthorizationHandler<OperationAuthorizationRequirement, Vetement>

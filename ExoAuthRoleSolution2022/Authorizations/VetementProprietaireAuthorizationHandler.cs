@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ExoAuthEtRoleSolution.Authorization
 {
+    // Gestionnaire de l'autorisation du propriétaire d'un vêtement :
     // Détermine si un utilisateur a les droits Create, Read, Update ou Delete
     // sur un vêtement
     public class VetementProprietaireAuthorizationHandler
