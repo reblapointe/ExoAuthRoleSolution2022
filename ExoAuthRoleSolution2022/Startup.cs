@@ -46,11 +46,18 @@ namespace ExoAuthRoleSolution2022
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
-            services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
+            // Authentification via Microsoft Azure https://portal.azure.com
+            // Documentation : https://docs.microsoft.com/fr-ca/aspnet/core/security/authentication/social/microsoft-logins?view=aspnetcore-3.1
+            /*services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
             {
+                // Si les clés sont dans usersecrets.json
                 microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
                 microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
-            });
+
+                // Si les clés sont dans appsettings.json
+                //microsoftOptions.ClientId = Configuration.GetSection("AuthenticationMicrosoft:ClientId").Value;
+                //microsoftOptions.ClientSecret = Configuration.GetSection("AuthenticationMicrosoft:ClientSecret").Value;
+            });*/
             services.AddRazorPages();
         }
 
